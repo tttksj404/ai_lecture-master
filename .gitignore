@@ -1,0 +1,11 @@
+# Jupyter Notebook checkpoint files
+.ipynb_checkpoints/
+
+# Agent workflow (internal use)
+AGENT_README_WORKFLOW.md
+
+# 강의 가이드 (각 day 폴더 내부)
+**/HOW_TO_LECTURE.md
+
+.env
+day5_CNN/data/cifar-10-python.tar.gz

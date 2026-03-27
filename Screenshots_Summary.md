@@ -1,0 +1,10 @@
+﻿- 스크린샷 2026-03-24 094709.png: Table of contents slide for an AI lecture covering AI/ML/DL definitions, data/learning understanding, and feature-based learning.
+- 스크린샷 2026-03-24 094908.png: Title slide for Section 1 and detailed slides defining AI, ML, and DL with a Venn diagram.
+- 스크린샷 2026-03-24 094916.png: Title slides for Section 2, Section 2-1 (Feature/Label), and Section 2-2 (ML real-life examples).
+- 스크린샷 2026-03-24 094923.png: Title slides for Section 3 (Single feature learning) and Section 3-1, along with 1D feature learning graphs.
+- 스크린샷 2026-03-24 094928.png: Slides explaining 1D feature learning, error measurement, and functions representing the relationship between features and labels.
+- 스크린샷 2026-03-24 094933.png: Title slide for Section 3-2 (Model and hypothesis space) and slides on linear/non-linear hypothesis spaces.
+- 스크린샷 2026-03-24 094941.png: Title slide for Section 3-3 (What is learning) and explanations of the learning process and criteria.
+- 스크린샷 2026-03-24 094946.png: Title slides for Section 4 (Multiple feature learning) and Section 4-1 (2D feature learning) showing 3D graphs.
+- 스크린샷 2026-03-24 094950.png: Slides on 2D feature learning hypothesis spaces and Section 4-2 (General terminology and model assumptions).
+- 스크린샷 2026-03-24 094955.png: Slide explaining why we learn the function f(x) and a quiz question about AI/ML/DL relationships.
