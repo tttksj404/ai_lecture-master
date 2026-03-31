@@ -1,0 +1,30 @@
+- 스크린샷 2026-03-24 094959.png: Quiz answers and lecture summary slides for AI, ML, and 1D feature learning.
+- 스크린샷 2026-03-24 095003.png: Lecture summary slides for model hypothesis space, learning process, and necessity of model learning.
+- 스크린샷 2026-03-24 095008.png: Title slide for "AI & Machine Learning Basics 2: What is Supervised Learning?" and its table of contents.
+- 스크린샷 2026-03-24 095023.png: Title slide for section "0. Overview (Starting Learning)".
+- 스크린샷 2026-03-24 095029.png: Slides defining supervised learning as learning prediction rules with input and label data.
+- 스크린샷 2026-03-24 095033.png: Slides giving examples of supervised learning such as predicting customer churn and fraud detection.
+- 스크린샷 2026-03-24 095039.png: Title slide for "1. Concept of Supervised Learning" and slide defining supervised learning.
+- 스크린샷 2026-03-24 095044.png: Slides detailing supervised learning with image classification examples and introducing Regression vs Classification.
+- 스크린샷 2026-03-24 095050.png: Slides comparing regression (predicting numbers) and classification (predicting categories) with examples.
+- 스크린샷 2026-03-24 095054.png: Slide defining supervised learning terminology: Feature, Label, Prediction, and Error.
+- 스크린샷 2026-03-24 095059.png: Title slide for "2. Regression" and slide defining regression problems with a scatter plot.
+- 스크린샷 2026-03-24 095104.png: Slides providing regression examples (housing prices, sales) and introducing Mean Squared Error (MSE).
+- 스크린샷 2026-03-24 095109.png: Slides explaining the formula for Mean Squared Error (MSE) and introducing R-squared (Coefficient of Determination).
+- 스크린샷 2026-03-24 095114.png: Slides explaining R-squared interpretation and a comparison table between MSE and R-squared.
+- 스크린샷 2026-03-24 095126.png: Slides providing concrete examples of evaluating model performance using MSE and R-squared.
+- 스크린샷 2026-03-24 095135.png: Slides explaining when to use MSE versus R-squared and introducing section "3. Classification".
+- 스크린샷 2026-03-24 095141.png: Slides defining classification problems with spam detection and medical diagnosis examples, showing decision boundaries.
+- 스크린샷 2026-03-24 095147.png: Slides providing more classification examples and introducing "Classification Accuracy".
+- 스크린샷 2026-03-24 095152.png: Slides explaining how to calculate classification accuracy with cat/dog prediction examples.
+- 스크린샷 2026-03-24 095157.png: Slides warning about accuracy pitfalls with imbalanced data and introducing the Confusion Matrix.
+- 스크린샷 2026-03-24 095202.png: Slides explaining Precision, Recall, and F1-score derived from a Confusion Matrix, and title for "4. Purpose of Learning".
+- 스크린샷 2026-03-24 095206.png: Slides stating the purpose of learning is to predict on new data and how to evaluate generalization.
+- 스크린샷 2026-03-24 095211.png: Slide defining overfitting where a model learns noise in the training data, harming test performance.
+- 스크린샷 2026-03-24 095215.png: Slides explaining overfitting causes, misconceptions about distribution shifts, and comparing overfitting vs underfitting.
+- 스크린샷 2026-03-24 095227.png: Quiz questions and detailed answers regarding supervised learning concepts and regression characteristics.
+- 스크린샷 2026-03-24 095233.png: Quiz questions and answers on the confusion matrix, along with a lecture summary on supervised learning.
+- 스크린샷 2026-03-24 095238.png: Lecture summary slides covering regression/classification evaluation metrics and overfitting vs underfitting.
+- 스크린샷 2026-03-24 095243.png: Lecture summary continued, plus the title slide for "AI & Machine Learning Basics 3: Cross-Validation".
+- 스크린샷 2026-03-24 095249.png: Title slide for "1. Test Performance Evaluation" and graphs comparing training error with test error.
+- 스크린샷 2026-03-24 095300.png: Slides discussing alternatives for test error estimation and introducing the "2. Validation Set Approach" with its methodology.

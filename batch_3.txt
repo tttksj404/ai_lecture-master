@@ -1,0 +1,30 @@
+- 스크린샷 2026-03-24 095346.png: Slides showing a validation set example with polynomial regression and limitations of the validation approach.
+- 스크린샷 2026-03-24 095350.png: Slides concluding validation set limitations and introducing the "3. K-fold Cross-Validation" section.
+- 스크린샷 2026-03-24 095355.png: Slides explaining the concepts and step-by-step process of K-fold Cross-Validation.
+- 스크린샷 2026-03-24 095400.png: Slides showing the K-fold CV error calculation formula and introducing Leave-One-Out Cross-Validation (LOOCV).
+- 스크린샷 2026-03-24 095412.png: Slides comparing K-fold CV and LOOCV using graphs of test Mean Squared Error.
+- 스크린샷 2026-03-24 095418.png: Quiz questions and explanations regarding training error versus test error.
+- 스크린샷 2026-03-24 095423.png: Quiz questions and answers covering underfitting, overfitting, and K-fold cross-validation.
+- 스크린샷 2026-03-24 095428.png: Lecture summary slides synthesizing test performance evaluation and cross-validation techniques.
+- 스크린샷 2026-03-24 095434.png: Title slide for "AI & Machine Learning Basics 4: What is Unsupervised Learning?" and contents.
+- 스크린샷 2026-03-24 095451.png: Learning objectives and the section 1 title slide defining Unsupervised Learning.
+- 스크린샷 2026-03-24 095456.png: Slides comparing supervised and unsupervised learning, and introducing the "2. Clustering" section.
+- 스크린샷 2026-03-24 095503.png: Slides explaining the concept of clustering with an example of marketing segmentation.
+- 스크린샷 2026-03-24 095508.png: Slides introducing K-means and Hierarchical clustering methods, and the section 3 title for K-means.
+- 스크린샷 2026-03-24 095512.png: Slides detailing the K-means clustering notation, mathematical formulation, and core idea.
+- 스크린샷 2026-03-24 095528.png: Slides explaining the K-means algorithm steps, visualization of iterations, and the impact of initial values.
+- 스크린샷 2026-03-24 095532.png: Section 4 title slide for "Hierarchical Clustering" and explanations of the agglomerative bottom-up algorithm.
+- 스크린샷 2026-03-24 095536.png: Slides showing the step-by-step merging in hierarchical clustering and defining link types (single, complete, average).
+- 스크린샷 2026-03-24 095541.png: Slides illustrating clustering results based on different link types and section 5 title for "Cautions in Clustering".
+- 스크린샷 2026-03-24 095545.png: Quiz questions and answers on the applications and examples of unsupervised learning.
+- 스크린샷 2026-03-24 095550.png: Lecture summary slides reviewing unsupervised learning concepts, K-means, and Hierarchical Clustering link types.
+- 스크린샷 2026-03-24 095600.png: Table of contents slide for a new lecture focused on Linear Regression.
+- 스크린샷 2026-03-24 095604.png: Learning objectives and an overview slide showing practical application examples of linear regression.
+- 스크린샷 2026-03-24 095610.png: Title slide for "1. Linear Regression" and slides defining it with advertising data examples.
+- 스크린샷 2026-03-24 095615.png: Title slide for "2. Simple Linear Regression" and slides explaining linear regression with a single explanatory variable.
+- 스크린샷 2026-03-24 095618.png: Slides presenting the mathematical model for simple linear regression and introducing the Least Squares method.
+- 스크린샷 2026-03-24 095622.png: Slides interpreting the coefficients and R-squared values for simple linear regression on advertising data.
+- 스크린샷 2026-03-24 095627.png: Slides introducing Multiple Linear Regression, comparing it to simple regression, and defining multiple variables.
+- 스크린샷 2026-03-24 095637.png: Slides detailing multiple linear regression estimation, matrix representation, 3D visualization, and interpretation.
+- 스크린샷 2026-03-24 095641.png: Title slide for "4. Precautions for Linear Regression" covering performance evaluation and coefficient interpretation.
+- 스크린샷 2026-03-24 095645.png: Lecture summary slides for linear regression models and quiz questions with detailed answers.
