@@ -1,0 +1,319 @@
+# Coverage Check
+
+## 01_eda_linear_regression/(과제-힌트) 0-2_로지스틱 회귀 구현.ipynb
+- marker_count: 5
+- todo_count: 19
+- step_count: 14
+- sample_todo:
+  - - 각 단계별로 TODO 영역을 채우며 학습자가 직접 구현합니다.
+  - - **요구사항 요약**
+  - 4. **학습 문제: Step–TODO 구체 설명**
+  - - **TODO 1**: 데이터 섞기 및 train/validation split *(연결 핵심개념: 데이터 전처리 / 일반화 성능)*
+  - - **TODO 2**: 데이터 표준화 *(연결 핵심개념: 특성 스케일링 / 학습 안정성)*
+  - - **TODO 3**: 예측(Forward) -> 손실 계산(Loss) -> 기울기 산출(Backward) -> 파라미터 업데이트로 이어지는 기본 로지스틱 회귀 학습 루프를 구현 (*연결 핵심개념: 시그모이드 함수, 확률 예측, BCE 손실 함수, 그래디언트  경사 하강법*)
+- sample_step:
+  - - [Logistic Regression From Scratch in Python NumPy](https://towardsdatascience.com/logistic-regression-from-scratch-in-python-ec66603592e2): 벡터 연산만으로 로지스틱 회귀를 구현하는 과정을 단계별로 설명합니다.
+  - - 각 단계별로 TODO 영역을 채우며 학습자가 직접 구현합니다.
+  - - **Step 요약**
+  - - **Step 1 (30분)**: 데이터셋 불러오기 및 전처리 — Iris 데이터를 이진 분류 문제로 변환하고 train/validation split 수행
+  - - **Step 2 (40분)**: 로지스틱 회귀 모델 학습 — 시그모이드 함수, BCE 손실, 그래디언트 계산 및 파라미터 업데이트 구현
+  - - **Step 3 (50분)**: 학습 기법 추가 — 미니배치 학습, L2 정규화, Gradient Accumulation, Early Stopping 구현 및 실험
+- sample_concept:
+  - # 로지스틱 회귀 구현 - 과제
+  - - **분류 모델 구현**: 로지스틱 회귀를 통한 이진 분류 모델 구현
+  - - 로지스틱 회귀의 핵심 개념과 흐름을 이해하고, NumPy로 **직접 구현**하여 이진 분류 모델을 **학습·평가**할 수 있다.
+  - - 선형 회귀의 기본 개념(가설 함수, 손실 함수, 경사 하강법)
+  - - 실습에서 다뤘던 **선형 회귀의 경사 하강법**을 출발점으로 사용합니다.
+  - - [Logistic Regression From Scratch in Python NumPy](https://towardsdatascience.com/logistic-regression-from-scratch-in-python-ec66603592e2): 벡터 연산만으로 로지스틱 회귀를 구현하는 과정을 단계별로 설명합니다.
+
+## 01_eda_linear_regression/(과제-힌트) 1-1_데이터 EDA 및 모델 학습.ipynb
+- marker_count: 9
+- todo_count: 20
+- step_count: 15
+- sample_todo:
+  - - 각 단계별로 TODO 영역을 채우며 학습자가 직접 구현
+  - - **요구사항 요약**
+  - 4. **학습 문제: Step–TODO 구체 설명**
+  - - **TODO 1**: 데이터셋 로딩 및 기초 통계 확인 *(연결 핵심개념: 탐색적 데이터 분석 / 데이터 이해)*
+  - - **TODO 2**: 결측치 및 이상치 탐색 *(연결 핵심개념: 데이터 품질 검증 / 전처리 준비)*
+  - - **TODO 3**: 변수 간 상관관계 분석 및 시각화 *(연결 핵심개념: 특성 간 관계 파악)*
+- sample_step:
+  - - [Comprehensive Guide to EDA with Python](https://towardsdatascience.com/exploratory-data-analysis-8fc1cb20fd15): pandas와 seaborn을 활용한 다양한 EDA 기법과 시각화 방법을 단계별로 설명합니다. 데이터 탐색 과정에서 어떤 질문을 던지고, 어떻게 인사이트를 도출하는지 배울 수 있습니다.
+  - - 각 단계별로 TODO 영역을 채우며 학습자가 직접 구현
+  - - **Step 요약**
+  - - **Step 1**: 데이터 로딩 및 EDA - 보스턴 주택 가격 데이터를 로드하고, 기초 통계, 결측치, 이상치, 상관관계를 탐색하며 데이터 특성 파악
+  - - **Step 2**: 데이터 전처리 워크플로우 - train/test split, 결측치 처리(SimpleImputer), 이상치 제거(IQR), 표준화(StandardScaler) 수행
+  - - **Step 3**: 모델 학습 및 평가 - 선형 회귀 모델을 학습시키고 RMSE, MAE, R² 지표로 성능 평가, 예측 결과 시각화
+- sample_concept:
+  - # 데이터 EDA 및 모델 학습 - 과제
+  - - **탐색적 데이터 분석(Exploratory Data Analysis, EDA)**: 데이터의 구조와 특성을 이해하고 시각화를 통해 인사이트 도출
+  - - **머신러닝 모델 학습 및 평가**: 선형 회귀 모델을 활용한 지도 학습 파이프라인 구현
+  - - 머신러닝의 기본 흐름(학습-예측-평가)을 이해하고, **선형 회귀 모델을 학습**시킬 수 있다.
+  - - **탐색적 데이터 분석(Exploratory Data Analysis, EDA)**: 데이터의 분포, 결측치, 이상치, 변수 간 관계를 시각화하고 분석하여 데이터 특성을 파악하는 과정
+  - - **선형 회귀(Linear Regression)**: 입력 변수와 출력 변수 간의 선형 관계를 모델링하여 연속형 값을 예측하는 지도 학습 알고리즘
+
+## 01_eda_linear_regression/(실습-힌트) 0-2_NumPy를 이용한 선형 회귀 모델 구현.ipynb
+- marker_count: 8
+- todo_count: 20
+- step_count: 18
+- sample_todo:
+  - - 각 단계별로 TODO 영역을 채우며 학습자가 직접 구현합니다.
+  - - **요구사항 요약**
+  - 4. **학습 문제: Step–TODO 구체 설명**
+  - - **TODO 1:** `diamonds` 데이터셋에서 **연속형 변수와 범주형 변수를 각각 분리**하여 리스트에 저장하기 (*연결 핵심개념: 데이터 전처리, 브로드캐스팅 활용*)
+  - - **TODO 2:** 연속형 변수의 평균과 표준편차를 구해 **표준화(Standardization) 전처리** 수행하기(*연결 핵심개념: 표준화(Standard Scaling), 브로드캐스팅*)
+  - - **TODO 3:** 행렬 연산을 통해 **정규방정식(Normal Equation)을 직접 구현**하고 최적 파라미터 구하기 (*연결 핵심개념: 최적 파라미터 계산, 수치적 안정성 이해*)
+- sample_step:
+  - - 각 단계별로 TODO 영역을 채우며 학습자가 직접 구현합니다.
+  - - **Step 요약**
+  - - **Step 1**: 데이터 로딩 및 정규화 - 연속형 변수 추출, 평균·표준편차 계산을 통한 표준 정규화 수행
+  - - **Step 2**: 선형대수 기반 해법 - 정규방정식, `np.linalg.lstsq`, SVD를 활용한 최적 파라미터 계산
+  - - **Step 3**: 경사 하강법 학습 - 손실 함수(MSE) 계산, 그래디언트 업데이트, 학습 곡선 시각화
+  - - **Step 4**: 미니배치 학습 및 조기 종료 - 배치 단위 학습, Early Stopping, Gradient Accumulation 구현
+- sample_concept:
+  - # NumPy를 이용한 선형 회귀 모델 구현 - 실습
+  - - 선형 회귀 모델 학습
+  - - `np.linalg.lstsq`와 SVD를 활용해 선형 회귀의 최적 파라미터를 구할 수 있다.
+  - - **사용 목적**: 연속형 변수를 이용한 선형 회귀 모델 학습 및 예측 성능 평가
+  - - **문제 개요**: 이 실습은 **NumPy를 활용한 선형 회귀 모델의 직접 구현**을 통해 머신러닝의 기초 원리를 익히기 위해 설계되었습니다. 학습자는 **데이터 정규화, 선형대수 기반 최적해 계산, 경사 하강법**을 코드로 확인하고, 최종적으로 **모델을 학습하고 평가하며 학습 과정을 시각화**할 수 있어야 합니다.
+  - - **TODO 4:** NumPy의 **`np.linalg.lstsq` 함수를 활용**하여 선형 회귀 파라미터 구하기 (*연결 핵심개념: 최소제곱법, 특이값 분해(SVD)*)
+
+## 01_eda_linear_regression/(실습-힌트) 1-1_데이터 EDA 및 모델 학습.ipynb
+- marker_count: 10
+- todo_count: 20
+- step_count: 11
+- sample_todo:
+  - - 각 단계별로 TODO 영역을 채우며 학습자가 직접 구현합니다.
+  - - **요구사항 요약**
+  - - **TODO 1**: 데이터 기본 통계/분포/상관관계를 계산하고 해석하기
+  - - **TODO 2**: 상관관계 행렬(heatmap) 시각화로 주요 변수 관계 확인하기
+  - - **TODO 3**: 히스토그램 기반 분포 비교(`hue="quality"` 포함) 수행하기
+  - - **TODO 4**: scatterplot으로 변수 관계와 클래스 분리 경향 확인하기
+- sample_step:
+  - - 각 단계별로 TODO 영역을 채우며 학습자가 직접 구현합니다.
+  - - **Step 요약**
+  - - **Step 1**: 데이터 로딩 및 탐색적 데이터 분석(EDA) - Wine 데이터셋 로드, 통계량 계산, 상관관계·분포 시각화, 결측치·이상치 탐지 및 처리
+  - - **Step 2**: 머신러닝 전처리 및 모델 학습 - Train/Test 분할, StandardScaler 적용, Logistic Regression 학습 및 성능 평가
+  - - **Step 3**: 모델 검증 및 해석 - 교차검증으로 일반화 성능 확인, 차원 축소(PCA) 및 군집화(KMeans)로 데이터 패턴 시각화
+  - - **Step 1**: Wine 데이터셋 로드 및 EDA 수행
+- sample_concept:
+  - # 데이터 EDA 및 모델 학습 - 실습
+  - - **탐색적 데이터 분석(EDA)**: 데이터 분포, 상관관계, 결측치·이상치 탐색 및 시각화
+  - - **지도학습 분류 모델**: 데이터 전처리, 로지스틱 회귀 학습, 성능 평가 및 교차검증
+  - - **EDA(탐색적 데이터 분석)**: 데이터 분포, 중앙값·사분위수·상관관계 등을 시각화를 통해 탐색하는 기법
+  - - **Step 1**: 데이터 로딩 및 탐색적 데이터 분석(EDA) - Wine 데이터셋 로드, 통계량 계산, 상관관계·분포 시각화, 결측치·이상치 탐지 및 처리
+  - - **사용 목적**: EDA로 데이터 특성을 파악하고, 이진 분류 모델을 학습·평가하여 머신러닝 파이프라인 전체 흐름을 실습
+
+## 02_data_generation_synthetic_prompting/(과제-힌트) 2-2_합성_데이터_생성_과제.ipynb
+- marker_count: 6
+- todo_count: 20
+- step_count: 20
+- sample_todo:
+  - - 각 단계별로 TODO 영역을 채우며 학습자가 직접 구현
+  - - **요구사항 요약**
+  - 4. **학습 문제: Step-TODO 구체 설명**
+  - - **TODO 1**: Zero-shot 프롬프팅으로 번역 수행 *(연결 핵심 개념: Zero-shot Prompting / 기본 번역)*
+  - - **TODO 2**: Few-shot 프롬프팅으로 번역 품질 개선 *(연결 핵심 개념: Few-shot Prompting / 예시 기반 학습)*
+  - - **TODO 3**: Chain-of-Thought 프롬프팅 적용 *(연결 핵심 개념: CoT / 단계별 추론)*
+- sample_step:
+  - - **Chain-of-Thought (CoT)**: 복잡한 추론 과제에서 단계별 사고 과정을 명시적으로 유도하여 정확도를 높이는 기법
+  - - 각 단계별로 TODO 영역을 채우며 학습자가 직접 구현
+  - - **Step 요약**
+  - - **Step 1**: 프롬프팅 기법 비교 실습 - Zero-shot, Few-shot, CoT 기법을 적용하여 번역 품질 비교
+  - - **Step 2**: 데이터 증강을 위한 Prompt Engineering - 페르소나 기반 다양한 스타일의 한국어 데이터 생성
+  - - **Step 3**: 증강 데이터 평가 (LLM as a Judge) - 생성된 데이터의 품질을 자동 평가하고 필터링
+- sample_concept:
+  - - **프롬프팅 기법(Prompting Techniques)**: Zero-shot, Few-shot, CoT(Chain-of-Thought) 등 다양한 프롬프팅 기법의 원리와 적용 방법 이해
+  - - Zero-shot, Few-shot, CoT 등 **다양한 프롬프팅 기법**의 차이를 이해하고, 상황에 맞게 적용할 수 있다.
+  - - **Zero-shot Prompting**: 예시 없이 지시문만으로 모델에게 작업을 요청하는 기법. 모델의 사전 학습된 지식에 의존
+  - - **Few-shot Prompting**: 소수의 예시(1~5개)를 프롬프트에 포함하여 모델이 패턴을 학습하도록 유도하는 기법
+  - - **Chain-of-Thought (CoT)**: 복잡한 추론 과제에서 단계별 사고 과정을 명시적으로 유도하여 정확도를 높이는 기법
+  - - **Structured Output (JSON Schema)**: API 응답을 정형화된 JSON 형식으로 받아 안정적인 후처리를 가능하게 하는 기법
+
+## 02_data_generation_synthetic_prompting/(실습-힌트) 2-2_합성_데이터_실습.ipynb
+- marker_count: 6
+- todo_count: 14
+- step_count: 20
+- sample_todo:
+  - - 각 단계별로 TODO 영역을 채우며 학습자가 직접 구현
+  - - **요구사항 요약**
+  - - **TODO 1**: 환경 변수 설정 및 API 키 로드 *(연결 핵심개념: 환경 변수 관리 / 보안)*
+  - - **TODO 2**: 프롬프팅 기법 비교 실험 *(연결 핵심개념: Zero-shot, Few-shot, CoT 프롬프팅)*
+  - - **TODO 3**: 구조화된 합성 데이터 생성 *(연결 핵심개념: Structured Output / 합성 데이터)*
+  - - **TODO 4**: 평가 결과 분석 및 해석 *(연결 핵심개념: 품질 검증 / 데이터 선별)*
+- sample_step:
+  - - **Chain-of-Thought(CoT)**: 복잡한 문제를 단계별로 추론하도록 유도하여 더 정확하고 논리적인 응답을 얻는 프롬프팅 기법
+  - - [Chain-of-Thought Prompting Paper](https://arxiv.org/abs/2201.11903): CoT 프롬프팅의 원리와 효과를 다룬 원 논문으로, 왜 단계별 추론이 LLM 성능을 향상시키는지 이해할 수 있습니다.
+  - - 각 단계별로 TODO 영역을 채우며 학습자가 직접 구현
+  - - **Step 요약**
+  - - **Step 1** (소요시간: 15분): 환경 설정 및 API 기본 호출 - 환경 변수로 API 키를 관리하고, OpenAI 호환 API를 통해 LLM을 호출하는 기본 구조 이해
+  - - **Step 2** (소요시간: 20분): 프롬프팅 기법 비교 - Zero-shot, Few-shot, CoT 프롬프팅의 특성을 비교하고 각 기법의 장단점 이해
+- sample_concept:
+  - - **프롬프팅 기법과 합성 데이터 생성**: 다양한 프롬프팅 기법(Zero-shot, Few-shot, CoT)을 활용한 고품질 합성 데이터 생성
+  - - **LLM as Judge를 통한 데이터 평가**: LLM 기반 자동 평가 시스템 설계 및 품질 검증
+  - - Zero-shot, Few-shot, Chain-of-Thought(CoT) 등 **다양한 프롬프팅 기법의 특성을 이해**하고 목적에 맞게 선택할 수 있다.
+  - - **LLM as Judge 방식**으로 생성된 데이터의 품질을 자동으로 평가하는 시스템을 설계할 수 있다.
+  - - **프롬프팅 기법(Prompting Techniques)**: LLM에게 원하는 답을 이끌어내기 위한 입력 설계 방법으로, Zero-shot, Few-shot, Chain-of-Thought 등 다양한 전략 포함
+  - - **Chain-of-Thought(CoT)**: 복잡한 문제를 단계별로 추론하도록 유도하여 더 정확하고 논리적인 응답을 얻는 프롬프팅 기법
+
+## 03_rag_langgraph/(과제-힌트) 4-1_RAG_기반_Customer_Service_AI_에이전트_개발.ipynb
+- marker_count: 8
+- todo_count: 20
+- step_count: 16
+- sample_todo:
+  - - **요구사항 요약**
+  - - **TODO 1**: chunk_size 값 변경하여 비교 *(연결: Chunking, chunk_size 트레이드오프)*
+  - - **TODO 2**: 검색 결과 비교 및 차이점 분석 *(연결: 청킹 전략 선택 기준)*
+  - - **TODO 3**: top_k 값 변경하여 비교 *(연결: Retriever, top_k 설정)*
+  - - **TODO 4**: 검색 결과 비교 및 차이점 분석 *(연결: 검색 품질과 top_k의 관계)*
+  - - **TODO 5**: 최종 설정 선택 및 근거 서술 *(연결: 의사결정 역량, 트레이드오프 분석)*
+- sample_step:
+  - - **Step 요약**
+  - - **Step 1 (5분)**: 환경 설정 + 실습 복습 — 실습 완료 전제, 환경 확인
+  - - **Step 2 (15분)**: 청킹 전략 변경 및 비교 — chunk_size, overlap 변경 → 결과 비교
+  - - **Step 3 (15분)**: Retriever 설정 변경 및 비교 — top_k 등 변경 → 검색 품질 비교
+  - - **Step 4 (10분)**: 결과 분석 및 근거 서술 — 설정 선택 이유 정리
+  - - **Step 2 — 청킹 전략 변경 및 비교**
+- sample_concept:
+  - # RAG 기반 Customer Service AI 에이전트 개발 - 과제
+  - - **Retriever 설정 최적화**: top_k 등 검색 파라미터 조정에 따른 RAG 응답 품질 변화 분석
+  - - **RAG 파이프라인 응용**: 실습에서 구현한 파이프라인을 기반으로 설정을 최적화하고 근거를 제시
+  - - top_k 값을 변경했을 때 RAG 응답 품질이 어떻게 달라지는지 비교하고 차이점을 설명할 수 있다
+  - - Yes24 고객 서비스 시나리오에 적합한 RAG 설정(chunk_size, overlap, top_k)을 선택하고 논리적 근거를 제시할 수 있다
+  - - **Retriever 파라미터**: top_k(반환 문서 수) 등 검색 설정이 RAG 응답 품질에 미치는 영향. 적은 k는 정보 누락 위험, 많은 k는 관련 없는 정보 포함 위험
+
+## 03_rag_langgraph/(과제-힌트) 4-2(1)_ReAct_기반_Agent_서비스_개발.ipynb
+- marker_count: 3
+- todo_count: 19
+- step_count: 20
+- sample_todo:
+  - - **도구 변형 및 재활용**: 기존 도구(쿠폰 발급)의 검증 로직 구조를 새로운 비즈니스 요구사항(환불 처리)에 적용
+  - - **도구 변형**: 기존 도구(쿠폰 발급)의 검증 로직 구조를 유지하면서, 새로운 비즈니스 요구사항(환불 처리)에 맞게 조건과 반환값을 수정하는 방법.
+  - - **요구사항 요약**
+  - - **TODO 1**: 환불 가능 조건 검증 *(연결: 도구 변형 / 학습목표1)*
+  - - **TODO 2**: 테스트 케이스 실행 *(연결: Agent 평가 / 학습목표2)*
+  - - **TODO 3**: CoT 패턴 StateGraph 구현 *(연결: LangGraph / 학습목표3)*
+- sample_step:
+  - - **CoT StateGraph 구현**: 명시적 추론 단계가 포함된 Agent 워크플로우 구현
+  - - 명시적 추론 단계를 포함한 Agent 워크플로우를 설계할 수 있다
+  - - **CoT StateGraph**: 도구 호출 전에 명시적 추론 단계(Reasoning)를 추가하여 Agent가 체계적으로 문제를 분석하고 계획을 수립하도록 하는 패턴.
+  - - **Step 요약**
+  - - **Step 1 (15분)**: 도구 변형 — 환불 처리 도구 구현, 쿠폰 발급 도구의 검증 로직 구조 재활용
+  - - **Step 2 (20분)**: Agent 실행 — 테스트 케이스 실행 + 평가 함수 호출
+- sample_concept:
+  - - **CoT StateGraph 구현**: 명시적 추론 단계가 포함된 Agent 워크플로우 구현
+  - - CoT 패턴 StateGraph를 구현할 수 있다
+  - - **CoT StateGraph**: 도구 호출 전에 명시적 추론 단계(Reasoning)를 추가하여 Agent가 체계적으로 문제를 분석하고 계획을 수립하도록 하는 패턴.
+  - - Chapter 4-2(1) 실습 완료: Agent 4대 구성요소, Plan 기법(Direct, CoT, ReAct), Trustworthiness 구현 경험
+  - - Chapter 4-1 RAG 실습 경험: Vector Store 구축, Retriever 활용
+  - - [LangGraph 공식 문서](https://langchain-ai.github.io/langgraph/): 상태 그래프 기반 Agent 워크플로우 가이드
+
+## 03_rag_langgraph/(과제-힌트) 4-2(2)_Multi-Agent_대표_패턴_학습.ipynb
+- marker_count: 6
+- todo_count: 20
+- step_count: 17
+- sample_todo:
+  - - 문제와 정답 코드가 병렬로 제공되며, 각 단계별 TODO 영역을 채우며 학습자가 직접 구현
+  - | Step 3 | Supervisor 패턴 구현 (TODO 1~4) | 20분 |
+  - | Step 4 | 워크플로우 구성 및 실행 (TODO 5~6) | 15분 |
+  - - **요구사항 요약**
+  - - TODO 1: SupervisorState 정의 (병렬 실행 지원)
+  - - TODO 2: 일정 Worker 노드 구현
+- sample_step:
+  - - 문제와 정답 코드가 병렬로 제공되며, 각 단계별 TODO 영역을 채우며 학습자가 직접 구현
+  - - **Step 요약**
+  - | Step | 내용 | 예상 시간 |
+  - | Step 1 | 환경 설정 + 실습 복습 | 5분 |
+  - | Step 2 | Supervisor 패턴 이해 | 10분 |
+  - | Step 3 | Supervisor 패턴 구현 (TODO 1~4) | 20분 |
+- sample_concept:
+  - - LangGraph StateGraph를 사용하여 다중 Worker 워크플로우를 구성할 수 있다
+  - - **StateGraph 확장**: 여러 노드를 연결하고 상태를 공유하는 LangGraph 워크플로우 구성 방법. 다중 Worker 구조에서는 State 필드를 Worker별로 구분하여 관리한다.
+  - - LangGraph StateGraph 사용법, 노드 함수 정의 방법
+  - - [LangGraph Multi-Agent 가이드](https://python.langchain.com/docs/langgraph): Multi-Agent 구현 심화
+  - - [LangGraph Supervisor 예제](https://langchain-ai.github.io/langgraph/tutorials/multi_agent/agent_supervisor/): Supervisor 패턴 공식 튜토리얼
+  - - LangGraph 조건부 엣지(conditional_edge) 사용하여 동적 Worker 선택 구현
+
+## 03_rag_langgraph/(실습-힌트) 4-1_RAG_기반_Customer_Service_AI_에이전트_개발.ipynb
+- marker_count: 14
+- todo_count: 20
+- step_count: 20
+- sample_todo:
+  - - 문제와 정답 코드가 병렬로 제공되며, 각 단계별로 TODO 영역을 채우며 학습자가 직접 코드를 작성합니다.
+  - - **요구사항 요약**
+  - - **TODO 1**: LLM에게 직접 질문하기 *(연결: 환각/Hallucination, 도메인 지식 부재)*
+  - - **TODO 2**: 자료를 직접 프롬프트에 넣어 질문하기 *(연결: 컨텍스트 기반 답변)*
+  - - **TODO 3**: 키워드로 관련 문서 검색하기 *(연결: Lexical Search의 한계)*
+  - - **TODO 4**: 문서를 Vector DB에 저장하기 *(연결: 임베딩/Embedding, Vector Store)*
+- sample_step:
+  - - 문제와 정답 코드가 병렬로 제공되며, 각 단계별로 TODO 영역을 채우며 학습자가 직접 코드를 작성합니다.
+  - - **Step 요약**
+  - - **Step 1 (5분)**: 환경 설정 — 라이브러리 설치 및 API Key 설정
+  - - **Step 2 (5분)**: LLM의 한계 체감 — "LLM 혼자서는 정확한 답변이 어렵다"
+  - - **Step 3 (10분)**: 자료와 함께하면 해결 — "자료가 있으면 정확해진다 → 어떻게 찾을까?"
+  - - **Step 4 (10분)**: 키워드로 자료 찾기 — "키워드 일치만 찾는다 → 의미도 찾으려면?"
+- sample_concept:
+  - # RAG 기반 Customer Service AI 에이전트 개발
+  - - **LLM의 한계와 RAG의 필요성**: 환각(Hallucination) 현상, 도메인 지식 부재, 최신 정보 미반영 등 LLM 단독 사용의 한계를 이해하고 RAG로 해결하는 방법
+  - - **RAG 파이프라인 구축**: 문서 로딩 → 청킹 → 임베딩 → Vector Store 저장 → 검색 → LLM 답변 생성까지의 전체 흐름
+  - - LLM의 환각(Hallucination) 현상을 직접 확인하고, RAG가 필요한 상황을 설명할 수 있다
+  - - 텍스트 임베딩의 원리(코사인 유사도)를 이해하고 Vector Store에 문서를 저장할 수 있다
+  - - LangGraph StateGraph를 사용하여 검색-생성 RAG 파이프라인을 구현하고 실행할 수 있다
+
+## 03_rag_langgraph/(실습-힌트) 4-2(1)_ReAct_기반_Agent_서비스_개발.ipynb
+- marker_count: 3
+- todo_count: 14
+- step_count: 20
+- sample_todo:
+  - - 문제와 정답 코드가 병렬로 제공되며, 각 단계별로 TODO 영역을 채우며 학습자가 직접 구현합니다
+  - - **요구사항 요약**
+  - - **TODO 1**: RAG 정책 검색 도구 구현 *(연결: Tool-use / 학습목표1)*
+  - - **TODO 2**: Direct 패턴 StateGraph 구현 *(연결: LangGraph / 학습목표3)*
+  - - **TODO 3**: ReAct 분기 함수 + 순환 엣지 구현 *(연결: ReAct / 학습목표2)*
+  - ### TODO 1: RAG 정책 검색 도구 구현
+- sample_step:
+  - - 문제와 정답 코드가 병렬로 제공되며, 각 단계별로 TODO 영역을 채우며 학습자가 직접 구현합니다
+  - - **Step 요약**
+  - - **Step 1 (3분)**: 환경 설정 — 필수 패키지 설치 및 API Key 설정
+  - - **Step 2 (3분)**: LLM only — 행동 불가 체감, LLM만으로는 실제 행동이 불가능함을 확인
+  - - **Step 3 (8분)**: +Tool — 행동 가능하게 만들기, RAG 정책 검색 도구 구현
+  - - **Step 4 (6분)**: +Memory — 맥락 유지하기, 대화 기록을 저장하여 맥락 유지
+- sample_concept:
+  - - LangGraph를 활용하여 상태 그래프 기반 Agent 워크플로우를 정의하고 제어할 수 있다
+  - - **RAG (Retrieval-Augmented Generation)**: 외부 지식 베이스에서 관련 문서를 검색(Retrieve)하여 LLM의 컨텍스트에 추가함으로써 정확도와 신뢰성을 높이는 기법.
+  - - **LangGraph**: LangChain 생태계의 확장 라이브러리로, 상태 그래프(State Graph)를 사용하여 Agent의 워크플로우를 명시적으로 정의하고, 조건부 분기와 반복을 제어할 수 있다.
+  - - Chapter 4-1 RAG 실습 경험: Vector Store 구축, Retriever 활용, 문서 검색 파이프라인 구현
+  - - `langgraph>=0.2.0`
+  - - **Step 3 (8분)**: +Tool — 행동 가능하게 만들기, RAG 정책 검색 도구 구현
+
+## 03_rag_langgraph/(실습-힌트) 4-2(2)_Multi-Agent_대표_패턴_학습.ipynb
+- marker_count: 6
+- todo_count: 20
+- step_count: 20
+- sample_todo:
+  - - 문제와 정답 코드가 병렬로 제공되며, 각 단계별 TODO 영역을 채우며 학습자가 직접 구현
+  - - **요구사항 요약**
+  - - TODO 1: 단일 Agent로 복잡한 작업을 시도하여 한계 체감
+  - - TODO 2: Planner Node를 구현하여 단계별 계획 수립
+  - - TODO 3: Worker Node를 구현하여 계획을 실행
+  - - TODO 4: Reflection Node를 구현하여 결과 검토 및 개선
+- sample_step:
+  - - **Worker Agent**: Planner의 계획에 따라 실제 작업을 수행하는 역할. 계획의 각 단계를 구체적인 결과물로 변환한다. 전문화된 프롬프트로 각 단계에 집중한다.
+  - - 문제와 정답 코드가 병렬로 제공되며, 각 단계별 TODO 영역을 채우며 학습자가 직접 구현
+  - - **Step 요약**
+  - - **Step 1 (5분)**: 환경 설정 — 패키지 설치, API 키 설정
+  - - **Step 2 (10분)**: 단일 Agent의 한계 체감 — 복잡한 작업을 단일 Agent로 시도
+  - - **Step 3 (5분)**: Multi-Agent 패턴 개요 — 5가지 대표 패턴 학습
+- sample_concept:
+  - - **LangGraph 워크플로우 구성**: StateGraph를 활용한 에이전트 간 상태 공유 및 흐름 제어
+  - - LangGraph StateGraph를 사용하여 Agent 간 상태 공유 워크플로우를 구성할 수 있다
+  - - **StateGraph**: LangGraph에서 제공하는 상태 기반 워크플로우 정의 클래스. 노드(Agent)와 엣지(흐름)로 구성되며, State 객체를 통해 Agent 간 정보를 전달한다. TypedDict를 상속하여 State 스키마를 정의한다.
+  - - `langgraph>=0.2.0`: Multi-Agent 워크플로우
+  - - Python 3.10 이상 권장 (LangGraph의 타입 힌팅 기능 활용)
+  - - **문제 개요**: 이 실습은 Multi-Agent 시스템의 필요성을 이해하고, Planner-Worker 및 Reflection 패턴을 구현하기 위해 설계되었습니다. 학습자는 LangGraph StateGraph를 사용하여 에이전트 간 상태 공유 워크플로우를 구성하고, 최종적으로 Multi-Agent 대표 패턴 5가지의 특징과 적합한 상황을 비교 설명할 수 있어야 합니다.
+
+## Notes Stats
+- AI_lecture_키워드실습_힌트전용_정리.md: lines=100, chars=2481
+- AI_lecture_키워드실습_EDA와_선형회귀_힌트.md: lines=216, chars=3803
+- AI_lecture_키워드실습_데이터생성합성_프롬프팅_힌트.md: lines=169, chars=2808
+- AI_lecture_키워드실습_RAG_LangGraph_힌트.md: lines=174, chars=3107
