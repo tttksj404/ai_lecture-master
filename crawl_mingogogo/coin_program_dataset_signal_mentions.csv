@@ -1,0 +1,20 @@
+﻿post_id,date,title,category,url,coin_name,ticker,metric_type,metric_value
+121,2025-10-22T17:07:59+09:00,보조지표에 대한 이해 (초보자용),코인 강의(공부하기),https://mingogogo.tistory.com/121,380원,저항선 돌파,pct_mentioned,30.0
+121,2025-10-22T17:07:59+09:00,보조지표에 대한 이해 (초보자용),코인 강의(공부하기),https://mingogogo.tistory.com/121,400원,추세 전환 확정,pct_mentioned,30.0
+124,2025-10-22T17:47:04+09:00,돈복남 코인유튜버 코인서적 정리 요약,코인 강의(공부하기),https://mingogogo.tistory.com/124,대형 알트,TOP 10,pct_mentioned,15.0
+124,2025-10-22T17:47:04+09:00,돈복남 코인유튜버 코인서적 정리 요약,코인 강의(공부하기),https://mingogogo.tistory.com/124,중형 알트,TOP 50,pct_mentioned,10.0
+165,2025-11-15T03:19:14+09:00,암호화폐(코인)투자 가이드 금리란?,카테고리 없음,https://mingogogo.tistory.com/165,미국 CPI,소비자물가지수,pct_mentioned,2.0
+165,2025-11-15T03:19:14+09:00,암호화폐(코인)투자 가이드 금리란?,카테고리 없음,https://mingogogo.tistory.com/165,중국 암호화폐 전면 금지,2021년,pct_mentioned,-50.0
+165,2025-11-15T03:19:14+09:00,암호화폐(코인)투자 가이드 금리란?,카테고리 없음,https://mingogogo.tistory.com/165,코로나 초기,2020.3,pct_mentioned,-50.0
+165,2025-11-15T03:19:14+09:00,암호화폐(코인)투자 가이드 금리란?,카테고리 없음,https://mingogogo.tistory.com/165,현금,USDT,pct_mentioned,5.0
+165,2025-11-15T03:19:14+09:00,암호화폐(코인)투자 가이드 금리란?,카테고리 없음,https://mingogogo.tistory.com/165,현금,USDT,pct_mentioned,15.0
+165,2025-11-15T03:19:14+09:00,암호화폐(코인)투자 가이드 금리란?,카테고리 없음,https://mingogogo.tistory.com/165,현금,USDT,pct_mentioned,60.0
+173,2025-11-19T23:04:53+09:00,MINJINE 마케팅 전략,매출 폭발 마케팅 실전기,https://mingogogo.tistory.com/173,CTR 목표,클릭률,pct_mentioned,50.0
+173,2025-11-19T23:04:53+09:00,MINJINE 마케팅 전략,매출 폭발 마케팅 실전기,https://mingogogo.tistory.com/173,평균 시청 시간,YOUTUBE,pct_mentioned,50.0
+182,2025-11-23T22:39:06+09:00,파밍 코인분석기 후기 [데이터 분석] 급등 신호 포착!,코인 프로그램 인증,https://mingogogo.tistory.com/182,크레딧코인,CTC,pct_mentioned,31.0
+182,2025-11-23T22:39:06+09:00,파밍 코인분석기 후기 [데이터 분석] 급등 신호 포착!,코인 프로그램 인증,https://mingogogo.tistory.com/182,토시,TOSHI,pct_mentioned,13.0
+206,2025-11-26T23:43:55+09:00,"마진거래 vs 선물거래 가이드 바이낸스,비트겟,바이비트,MEXC,OKX",코인 강의(공부하기),https://mingogogo.tistory.com/206,바이비트,BYBIT,pct_mentioned,0.01
+206,2025-11-26T23:43:55+09:00,"마진거래 vs 선물거래 가이드 바이낸스,비트겟,바이비트,MEXC,OKX",코인 강의(공부하기),https://mingogogo.tistory.com/206,비트겟,BITGET,pct_mentioned,0.02
+206,2025-11-26T23:43:55+09:00,"마진거래 vs 선물거래 가이드 바이낸스,비트겟,바이비트,MEXC,OKX",코인 강의(공부하기),https://mingogogo.tistory.com/206,바이낸스,BINANCE,pct_mentioned,0.02
+208,2025-11-27T00:10:06+09:00,마진거래 시뮬레이터,코인 강의(공부하기),https://mingogogo.tistory.com/208,손익률,ROE,pct_mentioned,50.0
+208,2025-11-27T00:10:06+09:00,마진거래 시뮬레이터,코인 강의(공부하기),https://mingogogo.tistory.com/208,예상 승률,%,pct_mentioned,50.0

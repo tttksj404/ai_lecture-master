@@ -9,3 +9,16 @@ AGENT_README_WORKFLOW.md
 
 .env
 day5_CNN/data/cifar-10-python.tar.gz
+
+# Local environments and generated artifacts
+venv/
+__pycache__/
+*.pyc
+.idea/
+.gradio/
+.ipynb_checkpoints/
+
+# Local temporary outputs
+temp_screenshots/
+temp_screenshots_full/
+_cleanup_archive/
