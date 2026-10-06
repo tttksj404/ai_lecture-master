@@ -22,3 +22,4 @@ __pycache__/
 temp_screenshots/
 temp_screenshots_full/
 _cleanup_archive/
+.venv/
